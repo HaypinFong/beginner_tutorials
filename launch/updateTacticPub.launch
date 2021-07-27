@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="beginner_tutorials" type="PubYamlOrderC.py" name="tacticPub" output="screen" respawn="true">
+        <param name="yamlpath" value="/home/haypin/pytest/yamldir"/>
+        <param name="launchpath" value="/home/haypin/pytest/launchdir"/>
+    </node>
+    <!-- <node pkg="beginner_tutorials" type="SubYamlOrder.py" name="tacticSub" output="screen" respawn="true"/> -->
+</launch>

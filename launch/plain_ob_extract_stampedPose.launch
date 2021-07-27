@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="beginner_tutorials" type="plain_ob_extract_stampedPose.py" name="peter_chargingpile_identification_reflectBoard" output="screen" respawn="true">
+        <!-- <param name="mydict" value="{'field1':1.0,'field2':2.0}"/> -->
+        <!-- <param name="launchpath" value="/home/haypin/pytest/launchdir"/> -->
+        <rosparam command="load" file="$(find beginner_tutorials)/launch/mydict.yaml" />
+        <rosparam param="a_list">[3,1,4,1,5,9,2,6]</rosparam>
+        <!-- <param name="scan_topic" value="/front_laser/scan_filtered /rear_laser/scan_filtered"/> -->
+        <param name="scan_topic" value="/peter_laser/scan"/>
+        <!-- <param name="scan_topic" value="/rear_laser_test/scan_original"/> -->
+    </node>
+    <!-- <node pkg="beginner_tutorials" type="SubYamlOrder.py" name="tacticSub" output="screen" respawn="true"/> -->
+</launch>

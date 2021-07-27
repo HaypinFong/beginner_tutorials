@@ -1,0 +1,34 @@
+dict_param:
+  field1: 1.0
+  field2: 2.0
+  field3: [3,1,4,1,5,9]
+  field4: {'field1':3.14,'field2':6.28}
+# intensity_thr: 50 
+# ob_extract: 
+#   board: 
+#     adjacent_dis_min: 0.1     #相邻板子间距，波0.1
+#     len: 
+#       min: 0.2                #波0.2
+#       max: 0.3                #波0.3
+#     interval_min: 0.016        #反光条空当长度阈值下限，波0.016
+#     mid_len_max: 0.05         #波0.05
+#     LR_len: 
+#       Min: 0.065               #波0.065
+#       Max: 0.09               #波0.09
+#       total_min: 0.11         #波0.11
+
+# 后激光参数：
+intensity_thr: 190            #北京散装力策激光50或150效果都挺好，北京润83335长柱激光180近距离光强过滤效果可以，但识别效果不如散装力策  格格前激光200
+ob_extract: 
+  board: 
+    adjacent_dis_min: 0.1     #相邻板子间距，波0.1
+    len: 
+      min: 0.4                #波0.2，0.5贴近时可能变短
+      max: 0.6                #波0.3
+    interval_min: 0.03        #反光条空当长度阈值下限，波0.016
+    mid_len_max: 0.05         #波0.05
+    LR_len: 
+      Min: 0.10               #波0.065，0.15贴近时可能变短
+      Max: 0.25               #波0.09
+      total_min: 0.30         #波0.11，0.35贴近时可能变短
+

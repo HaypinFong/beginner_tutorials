@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="beginner_tutorials" type="plain_ob_extract_v1.py" name="listener_py" output="screen" respawn="true"/>
+    <!-- <node pkg="beginner_tutorials" type="listener.py" name="listener_py" output="screen" respawn="true"/> -->
+</launch>
