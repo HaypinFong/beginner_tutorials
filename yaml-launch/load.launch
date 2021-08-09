@@ -1,0 +1,9 @@
+<launch>
+     <include file="159-B.yaml"/>
+     <include file="314-A.yaml"/>
+</launch>
+<launch>
+     <include file="/media/psf/Home/catkin_ws/src/beginner_tutorials/yaml-launch/load.launch/159-B.yaml"/>
+     <include file="/media/psf/Home/catkin_ws/src/beginner_tutorials/yaml-launch/load.launch/260-C.yaml"/>
+     <include file="/media/psf/Home/catkin_ws/src/beginner_tutorials/yaml-launch/load.launch/314-A.yaml"/>
+</launch>
